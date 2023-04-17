@@ -1,13 +1,13 @@
 import Foundation
 
-public class LinkedList<T> {
+public class LinkedList<T: Equatable> {
   var head: Node<T>?
   
   public init() {
     
   }
   
-  public class Node<T>: NSCopying {
+  public class Node<T: Equatable>: NSCopying {
     var value: T
     var next: Node?
     

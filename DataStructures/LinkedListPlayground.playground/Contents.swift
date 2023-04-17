@@ -18,4 +18,41 @@ func testRemoveNthToLastNode() {
   copy5?.printList()
 }
 
-testRemoveNthToLastNode()
+//testRemoveNthToLastNode()
+
+func testRemoveValue() {
+  let list1 = LinkedList<Int>()
+  list1.insertAtEnd(1)
+  list1.insertAtEnd(2)
+  list1.insertAtEnd(3)
+  list1.printList()
+
+  let copy1 = list1.removeValue(3)
+  print("Remove 3s")
+  copy1?.printList()
+  
+  let list2 = LinkedList<Int>()
+  list2.insertAtEnd(8)
+  list2.insertAtEnd(1)
+  list2.insertAtEnd(1)
+  list2.insertAtEnd(4)
+  list2.insertAtEnd(12)
+  list2.printList()
+
+  let copy2 = list2.removeValue(1)
+  print("Remove 1s")
+  copy2?.printList()
+  
+  let list3 = LinkedList<Int>()
+  list3.insertAtEnd(7)
+  list3.insertAtEnd(12)
+  list3.insertAtEnd(2)
+  list3.insertAtEnd(9)
+  list3.printList()
+
+  let copy3 = list3.removeValue(7)
+  print("Remove 7s")
+  copy3?.printList()
+}
+
+testRemoveValue()
